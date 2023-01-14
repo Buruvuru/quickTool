@@ -1,0 +1,6 @@
+List of functions and what they do
+
+1.fileName
+    Sets the  desired file name (for example index.html)
+2.setDoctype
+    Automatically set the Doctype
