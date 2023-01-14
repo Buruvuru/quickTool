@@ -2,7 +2,7 @@
 def fileName(thisFileName):
     open(thisFileName, 'a+')
 
-# Set doctyp
+# Set doctype
 def setDoctype(thisFileName, doctype):
     file = open(thisFileName, 'a+')
     file.writelines("<!DOCTYPE html>")
@@ -25,10 +25,16 @@ def endBodyTag():
 def h1Tag(thisFile,content):
     file=open(thisFile,'a+')
     file.writelines("<h1>" + content + "</h1>")
-
-
-
+    file.close()
+def h2Tag(thisFile,content):
+    file=open(thisFile,'a+')
+    file.writelines("<h2>" + content + "</h2>")
+    file.close()
 
 
 fileName("index.html")
 setTitle("index.html", "This is my title")
+h1Tag("index.html","We are now in jerusalem")
+h2Tag("index.html","We are now in Jerusalem")
+
+
