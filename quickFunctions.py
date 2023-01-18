@@ -1,6 +1,7 @@
 # This function sets the file name
-def fileName(thisFileName):
-    open(thisFileName, 'a+')
+def fileName(*filenames):
+    for filename in filenames:
+        open(filename, 'a+')
 
 # Set doctype
 def setDoctype(thisFileName, doctype):
